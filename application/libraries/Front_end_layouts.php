@@ -134,7 +134,7 @@ class Front_end_layouts
 				$this->CI->load->view('templates/front_end/header', $params);
 
 				// Top bar
-				$this->CI->load->view('templates/front_end/top-bar', $params);
+				// $this->CI->load->view('templates/front_end/top-bar', $params);
 				
 				// Nav bar
 				$this->CI->load->view('templates/front_end/navbar', $params);

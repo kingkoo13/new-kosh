@@ -653,78 +653,78 @@ $(window).load(function(){
 });
 
 
-    $(window).load(function() {
+    // $(window).load(function() {
 
-        $('#doctor').prevAll().eq(1).css('background', '#449D44');
+    //     $('#doctor').prevAll().eq(1).css('background', '#449D44');
 
-        var $sfield = $('#old_cnic').autocomplete({
-        select: function( event, ui ) 
-        {
-            if(ui.item.value === 'No Results Found')
-            {
-                ui.item.value = '';
-            }
-        },  
-        change: function() {
-            var old_cnic = $('#old_cnic').val();
-            if(old_cnic.length > 0)
-            {
+    //     var $sfield = $('#old_cnic').autocomplete({
+    //     select: function( event, ui ) 
+    //     {
+    //         if(ui.item.value === 'No Results Found')
+    //         {
+    //             ui.item.value = '';
+    //         }
+    //     },  
+    //     change: function() {
+    //         var old_cnic = $('#old_cnic').val();
+    //         if(old_cnic.length > 0)
+    //         {
 
-                $.ajax({
-                    url: '/a/autocomplete/mr_number_autocomplete/',
-                    method: 'post',
-                    data: {'old_cnic': old_cnic},
-                    success: function(data)
-                    {
-                        if(data.length !== 0)
-                        {
-                            var data = jQuery.parseJSON(data);
-                            data = data[0]['mr_number'];
-                            if(data === 'No Results Found')
-                            {
-                                $('#mr_number').val('');
-                            }
-                            else
-                            {
-                                $('#mr_number').val(data);
-                            }
-                        }
-                    },
-                    error: function()
-                    {
-                        alert('Something went wrong!');
-                    }
-                });
-            }
-        },          
-        focus: function( event, ui ) 
-        {
-            if(ui.item.value === 'No Results Found')
-            {
-                ui.item.value = '';
-            }
-        },
-        source: function(request, response)
-        {   
-            var url = "<?php echo site_url('a/autocomplete/cnic_autocomplete/'); ?>";
-              $.post(url, {old_cnic:request.term}, function(old_cnic){
-                response($.map(old_cnic, function(patient) {
-                    return {
-                        value: patient.cnic
-                    };
-                }).slice(0, 5));
+    //             $.ajax({
+    //                 url: '/a/autocomplete/mr_number_autocomplete/',
+    //                 method: 'post',
+    //                 data: {'old_cnic': old_cnic},
+    //                 success: function(data)
+    //                 {
+    //                     if(data.length !== 0)
+    //                     {
+    //                         var data = jQuery.parseJSON(data);
+    //                         data = data[0]['mr_number'];
+    //                         if(data === 'No Results Found')
+    //                         {
+    //                             $('#mr_number').val('');
+    //                         }
+    //                         else
+    //                         {
+    //                             $('#mr_number').val(data);
+    //                         }
+    //                     }
+    //                 },
+    //                 error: function()
+    //                 {
+    //                     alert('Something went wrong!');
+    //                 }
+    //             });
+    //         }
+    //     },          
+    //     focus: function( event, ui ) 
+    //     {
+    //         if(ui.item.value === 'No Results Found')
+    //         {
+    //             ui.item.value = '';
+    //         }
+    //     },
+    //     source: function(request, response)
+    //     {   
+    //         var url = "<?php echo site_url('a/autocomplete/cnic_autocomplete/'); ?>";
+    //           $.post(url, {old_cnic:request.term}, function(old_cnic){
+    //             response($.map(old_cnic, function(patient) {
+    //                 return {
+    //                     value: patient.cnic
+    //                 };
+    //             }).slice(0, 5));
 
-              }, "json");  
-        },
+    //           }, "json");  
+    //     },
 
-        minLength: 2,
-        autofocus: true,
+    //     minLength: 2,
+    //     autofocus: true,
 
-        });
+    //     });
         
-        $sfield.autocomplete('option','change').call($sfield);
+    //     $sfield.autocomplete('option','change').call($sfield);
             
-    });
+    // });
 
 </script>
 

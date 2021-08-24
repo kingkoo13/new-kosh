@@ -1,17 +1,28 @@
 <div class="container">
-    <p class="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    
-    <p class="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>     
-    
-    <p class="text-justify">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>      
-    
-    <p class="text-justify">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-    </p>    
+    <div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6">
+        <p class="text-justify">
+            We at KOSH believe that the foundation of a happy child and a joyous family lies in the bonding shared between the parents and their child and that this connection must be fostered right from childhood itself, reflecting in the upbringing of their kids. KOSH creates a world where every parent-child bonding can prosper and achieve the finest, happiest children! Our motto is to support families across the globe by giving them the necessary direction and strengthening the parent-child connection through short-and-long-term guidance. No matter the age of the child and the challenges before parents, there is no better time than NOW to start afresh.Our services at KOSH create value for everyone—the children, parents, family, society and future generations. 
+        </p>
+        </div>
+        <div class="col-md-6">
+            <img src="<?= FRONT_END_ASSETS ?>images/about_us_001.png" alt="" />
+        </div>    
+    </div>
+    </div>
+  
+
+    <div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <img src="<?= FRONT_END_ASSETS ?>images/about_us_002.png" alt="" />
+        </div>
+        <div class="col-md-6">
+            <p class="text-justify">
+                Our widespread services include short-and-long-term counselling and coaching, master-classes by experts across the globe catering to specific parenting needs and 24/7 support to parents on parenting content. Our numerous videos and articles on parenting by world-class experts and the best-in-class library on parenting would definitely be a critical value-add to parents. We have strong and tested connections world-wide with the best accredited counselors, coaches, clinical psychologists, pediatrics and nutritionists who support us in handling almost every situation confronting a parent in today’s world. We are a value-based organization with a mission to transform today’s stress-based parenting to resilience-based parenting in as many families as possible. Children are the future of our planet; let’s together aim to create a happier and congenial planet!!! 
+            </p>
+        </div>
+    </div>
+</div>
 </div>

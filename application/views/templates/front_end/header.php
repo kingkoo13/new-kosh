@@ -17,6 +17,7 @@
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,800italic,800,900italic,900,700italic,700,600italic,600,500italic,500,400italic,300italic,300,200italic,200,100italic,100' rel='stylesheet' type='text/css'>
 
 <!-- Style Sheets -->
+<link rel="stylesheet" href="<?= FRONT_END_ASSETS ?>css/bootstrap.min.css">
 <link rel="stylesheet" href="<?= FRONT_END_ASSETS ?>css/bootstrap.css">
 <link rel="stylesheet" href="<?= FRONT_END_ASSETS ?>css/bootstrap-datetimepicker.min.css">
 <link rel="stylesheet" href="<?= FRONT_END_ASSETS ?>css/animations.css">

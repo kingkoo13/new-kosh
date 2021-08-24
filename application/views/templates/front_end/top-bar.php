@@ -15,16 +15,23 @@
 
 <!-- Header 
 ================================= -->
-<header id="header" class="grow-mode">
+<header id="header" class="grow-mode bg-light">
     <!--  Top bar -->
     <div class="top-bar top-bar-white">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
         <!-- Left Section -->
             <div class="top-bar-left">
                 <ul class="social-icons clearfix">
-                    <li><a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="javascript:void(0)" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li>
+                        <a href="https://www.facebook.com/koshglobal" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/koshwellness/" data-toggle="tooltip" data-placement="bottom" title="instagram"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/koshwellness/" data-toggle="tooltip" data-placement="bottom" title="Linkdin"><i class="fa fa-linkedin"></i></a>
+                    </li>
 
               </ul>
             </div>
@@ -33,7 +40,7 @@
             <div class="top-bar-right">
                 <ul class="right-top pull-left">
                     <!-- <li><a href="#"><i class="fa fa-clock-o"></i>Mon - Fri : 09:00 - 18:30</a></li> -->
-                    <li><a href="javascript:void(0)"><i class="fa fa-phone"></i> <?= PHONE_NUMBER ?></a></li>
+                    <li><a href="javascript:void(0)"><i class="fa fa-phone-square"></i> <?= PHONE_NUMBER ?></a></li>
                 </ul>
              </div>
              <!-- Right Section -->
