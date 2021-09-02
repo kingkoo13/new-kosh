@@ -917,7 +917,7 @@ footer {
     -webkit-box-shadow: 0 15px 15px -20px #b0b0b0 inset;
 }
 .footer {
-    background: url(../images/footer.jpg) top center !important;
+    /*background: url(../images/footer.jpg) top center !important;*/
     background-size: cover !important;
 }
 .footer:before {
@@ -931,7 +931,7 @@ footer {
     z-index: -1;
 }
 .footer {
-    padding-top: 80px;
+    padding-top: 50px;
     position: relative;
     z-index: 0;
 }
@@ -3916,7 +3916,7 @@ label.valid {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 .hp_txt_02 {
@@ -3949,14 +3949,15 @@ h1 {
    font-weight: 700;
 }
 
-#testimonials .carousel-indicators li {
+.carousel-indicators li {
     height: 10px;
     width: 10px;
     border-radius: 15px;
     background: #fff;
+    border: 1px solid #eee;
   }
 
-#home_slider_001 .carousel-indicators li {
+.carousel-indicators li {
     height: 10px;
     width: 10px;
     border-radius: 15px;
@@ -3992,3 +3993,20 @@ h1 {
     background: #243c4f;
     color: #fff;
 }
+
+.zoom {
+  transition: transform .4s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(.93); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.shadow-bg {
+    box-shadow: 0px 0px 10px #80808052;
+}
+
+
+#testimonials .carousel-indicators{margin-bottom: -50px;}
+

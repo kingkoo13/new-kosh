@@ -1,21 +1,27 @@
+<header class="bg-white">
 <!-- Menu Sections -->
-<div class="d-flex justify-content-between">
-<nav class="col-12 navbar navbar-expand-lg navbar-light bg-light px-lg-5 ">
-    <div class="navbar-header logo">
+<div class="container bg-white">
+<div class="row">    
+<nav class="col-12 navbar navbar-expand-lg navbar-light px-lg-5 ">
+    <div class="col-lg-2 col-6 navbar-header logo">
         <a class="navbar-brand" href="<?= site_url('f/home') ?>">
             <img src="<?= FRONT_END_ASSETS ?>images/kosh-logo.png" alt=" " class="img-responsive center-block desktop">
             <img src="<?= FRONT_END_ASSETS ?>images/kosh-logo-mobile.png" alt=" " class="img-responsive center-block mobile">
         </a>                
     </div>
-    
-    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-user px-2 pt-1"></span>
+    <div class="col-lg-auto col-6 user d-flex flex-row-end d-lg-none m-0 p-0">
+        <div class="col-6 d-lg-none"></div>
+        <a class="d-lg-none mt-2 h5" href="<?= site_url('f/user') ?>"><span class="fa fa-user px-2 pt-1"></span></a>
+        
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+        </button>
+    
+    </div>
+    
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
         <a class="nav-link" href="<?= site_url('f/home') ?>">Home</a>
       </li>
 
@@ -28,12 +34,10 @@
           <a class="dropdown-item" href="<?= site_url('f/about') ?>">Founders</a>
           <a class="dropdown-item" href="<?= site_url('f/about') ?>">Journey</a>
           <a class="dropdown-item" href="<?= site_url('f/about') ?>">Mentors</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Login Here</a>
         </div>
         </li>
         <li class="nav-item list-inline-item">
-        <a class="nav-link" href="#">Coaches</a>
+        <a class="nav-link" href="<?= site_url('f/coaches') ?>">Coaches</a>
         </li>
         <li class="nav-item list-inline-item">
             <a class="nav-link" href="#">Partner with us</a>
@@ -42,8 +46,12 @@
             <a class="nav-link" href="#">Contact Us</a>
         </li>
     </ul>
-</div>
+    <div class="d-none d-lg-block col-lg-4 vertical-middle visible-block-sm-xs text-right animatedParent animateOnce">
+        <a href="<?= site_url('f/login/') ?>" class="btn btn-type1-reverse pulse animated">Login</a>
+    </div>
+    </div>
 </nav>
+</div>
 </div>
 
 <!-- Menu Sections -->

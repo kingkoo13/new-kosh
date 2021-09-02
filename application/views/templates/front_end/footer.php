@@ -1,22 +1,24 @@
 <!-- Footer Section
 ================================= -->
 <!-- Footer Top Strip -->
-	<div class="top-strip white-bg">
+	<div class="top-strip bg-white">
     	<div class="container">
             <div class="row vertical-align">
                     
-                <div class="col-md-8 vertical-middle visible-block-sm-xs marbot30-sm-xs">
-                    <div class="text-center marbot0 media">
-                        <span class="media-left"><i class="fa fa-phone icon-bordered"></i></span>
-                        <span class="media-body text-left media-middle">
-                            If you Have Any Questions Call Us On <a href="javascript:void(0)"><span class="bold"> <?= PHONE_NUMBER ?></span></a>                
-                        </span>
+                <div class="col-12 m-auto">
+                    <div class="d-flex justify-content-center bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <i class="fa fa-phone icon-bordered"></i>
+                        </div>
+                      <div class="p-2 bd-highlight">
+                          <span class="d-block mt-2">Reach out to our experts at <span class="bold color-light"><a href="tel:<?= PHONE_NUMBER ?>"> <?= PHONE_NUMBER ?></a></span></span>
+                      </div>
                     </div> 
                 </div>
                 
-                <div class="col-md-4 vertical-middle visible-block-sm-xs text-center animatedParent animateOnce">
-                    <a href="<?= site_url('f/appointment/') ?>" class="btn btn-type1-reverse pulse animated"> Make an Appointment</a>
-                </div>
+                <!--div class="col-md-4 vertical-middle visible-block-sm-xs text-center animatedParent animateOnce">
+                    <a href="<?= site_url('f/appointment/') ?>" class="btn btn-type1-reverse pulse animated"> Book a free session</a>
+                </div-->
             </div>
         </div>
     </div>
@@ -27,35 +29,80 @@
         <!-- Footer Content -->
         <div class="container">
                 <div class="text-center marbot50">
+                    <div class="h4 color-light mb-3 text-capitalize">Join our socials</div>
                     <div class="clearfix social-icons-simple footer-social-bg social-icons-lg text-center marbot30">
                         <ul>
                           <li data-html="true" title="Facebook" data-toggle="tooltip"><a href="https://www.facebook.com/sheryar.ahmed.089"><i class="fa fa-facebook"></i></a></li>
-                          <li data-html="true" title="Twitter" data-toggle="tooltip"><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+                          <li data-html="true" title="linkedin" data-toggle="tooltip"><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
+                          <li data-html="true" title="instagram" data-toggle="tooltip"><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
+                          <li data-html="true" title="youtube" data-toggle="tooltip"><a href="javascript:void(0)"><i class="fa fa-youtube"></i></a></li>
                       </ul>
                     </div>
                 
-                    <div class="footer-menu marbot30">
-                        <ul class="list-unstyled list-inline">
-                        <li>
-                            <a href="<?= site_url('f/home') ?>" role="button">Home </a>
-                        </li>
+                    <div class="col-lg-12 mt-5">
+                        <div class="row text-center">
+                            <div class="col-lg-4 mb-3">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="mb-4">
+                                        <a class="h5" href="<?= site_url('f/home') ?>" role="button">Programs </a>
+                                    </li>
 
-                        <li>
-                            <a href="<?= site_url('f/about') ?>" role="button">About us </a>
-                        </li>
+                                    <li>
+                                        <a class="h6" href="<?= site_url('f/about') ?>" role="button">About us </a>
+                                    </li>
 
-                        <li>
-                            <a href="<?= site_url('f/doctor') ?>" role="button">Doctors List </a>
-                        </li>
+                                    <li>
+                                        <a class="h6" href="<?= site_url('f/doctor') ?>" role="button">Doctors List </a>
+                                    </li>
 
-                        <li>
-                            <a href="appointment.html">Schedule Appointment </a>
-                        </li>
-                        </ul>
+                                    <li>
+                                        <a class="h6" href="appointment.html">Schedule Appointment </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="mb-4">
+                                        <a class="h5" href="<?= site_url('f/home') ?>" role="button">About Us </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="h6" href="<?= site_url('f/about') ?>" role="button">About us </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="h6" href="<?= site_url('f/doctor') ?>" role="button">Doctors List </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="h6" href="appointment.html">Schedule Appointment </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="mb-4">
+                                        <a class="h5" href="<?= site_url('f/home') ?>" role="button">Contact Us </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="h6" href="<?= site_url('f/about') ?>" role="button">About us </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="h6" href="<?= site_url('f/doctor') ?>" role="button">Doctors List </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="h6" href="appointment.html">Schedule Appointment </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
     
-                    <div class="copyright text-center marbot30-md-xs">
-                        Copyright &copy; 2016 <?= (date('Y') > '2016') ? ' - ' . date('Y') . ' ': '' ?><span class="bold">Ready Care &reg;</span>. All Rights Reserved.                  </div>
+                    <div class="copyright text-center marbot30-md-xs mt-4">
+                        Copyright &copy; 2021 <?= (date('Y') > '2021') ? ' - ' . date('Y') . ' ': '' ?><span class="bold">Kosh Global&reg;</span>. All Rights Reserved.                  </div>
                 </div>
         </div>
         <!-- Footer Content -->
