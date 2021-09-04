@@ -11,7 +11,7 @@
                             <i class="fa fa-phone icon-bordered"></i>
                         </div>
                       <div class="p-2 bd-highlight">
-                          <span class="d-block mt-2">Reach out to our experts at <span class="bold color-light"><a href="tel:<?= PHONE_NUMBER ?>"> <?= PHONE_NUMBER ?></a></span></span>
+                          <span class="d-block mt-2">Reach out to our experts at <span class="bold color-light"> <?= PHONE_NUMBER ?></span></span>
                       </div>
                     </div> 
                 </div>
@@ -32,10 +32,10 @@
                     <div class="h4 color-light mb-3 text-capitalize">Join our socials</div>
                     <div class="clearfix social-icons-simple footer-social-bg social-icons-lg text-center marbot30">
                         <ul>
-                          <li data-html="true" title="Facebook" data-toggle="tooltip"><a href="https://www.facebook.com/sheryar.ahmed.089"><i class="fa fa-facebook"></i></a></li>
-                          <li data-html="true" title="linkedin" data-toggle="tooltip"><a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a></li>
-                          <li data-html="true" title="instagram" data-toggle="tooltip"><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
-                          <li data-html="true" title="youtube" data-toggle="tooltip"><a href="javascript:void(0)"><i class="fa fa-youtube"></i></a></li>
+                          <li data-html="true" title="Facebook" data-toggle="tooltip"><a href="https://www.facebook.com/koshglobal"><i class="fa fa-facebook"></i></a></li>
+                          <li data-html="true" title="linkedin" data-toggle="tooltip"><a href="https://www.linkedin.com/company/koshwellness/"><i class="fa fa-linkedin"></i></a></li>
+                          <li data-html="true" title="instagram" data-toggle="tooltip"><a href="https://www.instagram.com/koshwellness/"><i class="fa fa-instagram"></i></a></li>
+                          <li data-html="true" title="youtube" data-toggle="tooltip"><a href="https://www.youtube.com/channel/UCGeW7fCRh_nsld1RYBTKc4A"><i class="fa fa-youtube"></i></a></li>
                       </ul>
                     </div>
                 
@@ -44,57 +44,74 @@
                             <div class="col-lg-4 mb-3">
                                 <ul class="list-unstyled list-inline">
                                     <li class="mb-4">
-                                        <a class="h5" href="<?= site_url('f/home') ?>" role="button">Programs </a>
+                                        <a class="h5" href="<?= site_url('all-programs') ?>" role="button">Programs</a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="<?= site_url('f/about') ?>" role="button">About us </a>
+                                        <a class="h7" href="<?= site_url('free-courses') ?>" role="button">Free Courses</a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="<?= site_url('f/doctor') ?>" role="button">Doctors List </a>
+                                        <a class="h7" href="<?= site_url('all-programs') ?>" role="button">All Programs</a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="appointment.html">Schedule Appointment </a>
+                                        <a class="h7" href="<?= site_url('membership') ?>" role="button">Membership</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="h7" href="<?= site_url('book') ?>">Book</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 mb-3">
                                 <ul class="list-unstyled list-inline">
                                     <li class="mb-4">
-                                        <a class="h5" href="<?= site_url('f/home') ?>" role="button">About Us </a>
+                                        <a class="h5" href="<?= site_url('about-us') ?>" role="button">About Us </a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="<?= site_url('f/about') ?>" role="button">About us </a>
+                                        <a class="h7" href="<?= site_url('who-we-are') ?>" role="button">Who We Are </a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="<?= site_url('f/doctor') ?>" role="button">Doctors List </a>
+                                        <a class="h7" href="<?= site_url('faqs') ?>" role="button">Faq's </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a class="h7" href="<?= site_url('press') ?>" role="button">Press </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a class="h7" href="<?= site_url('careers') ?>" role="button">Careers </a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="appointment.html">Schedule Appointment </a>
+                                        <a class="h7" href="<?= site_url('blogs') ?>">Blogs </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 mb-3">
                                 <ul class="list-unstyled list-inline">
                                     <li class="mb-4">
-                                        <a class="h5" href="<?= site_url('f/home') ?>" role="button">Contact Us </a>
+                                        <a class="h5" href="<?= site_url('contact-us') ?>" role="button">Contact Us </a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="<?= site_url('f/about') ?>" role="button">About us </a>
+                                        <a class="h7" href="<?= site_url('support') ?>" role="button">Support </a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="<?= site_url('f/doctor') ?>" role="button">Doctors List </a>
+                                        <a class="h7" href="<?= site_url('contact-us') ?>" role="button">Contact Us </a>
+                                    </li>
+                                    <li>
+                                        <a class="h7" href="<?= site_url('careers') ?>" role="button">Careers </a>
                                     </li>
 
                                     <li>
-                                        <a class="h6" href="appointment.html">Schedule Appointment </a>
+                                        <a class="h7" href="<?= site_url('partnerships') ?>">Partnerships </a>
                                     </li>
                                 </ul>
                             </div>

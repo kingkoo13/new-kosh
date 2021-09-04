@@ -1,7 +1,7 @@
-<div class="container bg-white">
+<div class="container">
     <div class="row">
     <div class="col-md-12">
-        <h1 class="text-center text-dark">About Us</h1>
+        <h1 class="text-center text-dark">All Programs</h1>    
         <div class="col-md-6">
         <p class="text-justify">
             We at KOSH believe that the foundation of a happy child and a joyous family lies in the bonding shared between the parents and their child and that this connection must be fostered right from childhood itself, reflecting in the upbringing of their kids. KOSH creates a world where every parent-child bonding can prosper and achieve the finest, happiest children! Our motto is to support families across the globe by giving them the necessary direction and strengthening the parent-child connection through short-and-long-term guidance. No matter the age of the child and the challenges before parents, there is no better time than NOW to start afresh.Our services at KOSH create value for everyone—the children, parents, family, society and future generations. 

@@ -53,6 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'site';
 
 
+
 $route['a/login'] = "a/login";
 $route['a/doctor_specialization'] = "a/doctor_specialization";
 $route['a/disease'] = "a/disease";
@@ -64,6 +65,27 @@ $route['a/prescription'] = "a/prescription";
 $route['a/admin'] = "a/admin";
 $route['a'] = "a/admin";
 $route['f'] = "f/home";
+$route['all-programs'] = "f/page/all_programs" ;
+$route['free-courses'] = "f/page/free_courses" ;
+$route['membership'] = "f/page/membership" ;
+$route['partnerships'] = "f/page/partnerships" ;
+$route['book'] = "f/page/book" ;
+$route['about-us'] = "f/page/about_us" ;
+$route['who-we-are'] = "f/page/who_we_are" ;
+$route['faqs'] = "f/page/faqs" ;
+$route['press'] = "f/page/press" ;
+$route['careers'] = "f/page/careers" ;
+$route['blogs'] = "f/page/blogs" ;
+$route['contact-us'] = "f/page/contact_us" ;
+$route['support'] = "f/page/support" ;
+$route['vision-mission'] = "f/page/vision_mission" ;
+$route['founders'] = "f/page/founders" ;
+$route['journey'] = "f/page/journey" ;
+$route['mentors'] = "f/page/mentors" ;
+$route['coaches'] = "f/coaches" ;
+$route['user-login'] = "f/page/user_login" ;
+
+
 
 // $route['login'] = 'admin/login';
 // $route['appointment'] = 'admin/appointment';
@@ -77,4 +99,4 @@ $route['f'] = "f/home";
 
 $route['404_override'] = '';
 
-$route['translate_uri_dashes'] = FALSE;
+$route['translate_uri_dashes'] = TRUE;

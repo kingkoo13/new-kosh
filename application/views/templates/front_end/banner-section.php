@@ -10,10 +10,12 @@ Banner Section
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="<?= FRONT_END_ASSETS ?>images/banner/kosh_banner_001.jpg" class="d-block img-fluid" alt="...">
+              <img src="<?= FRONT_END_ASSETS ?>images/banner/kosh_banner_001.jpg" class="d-lg-block d-md-block d-none img-fluid" alt="...">
+              <img src="<?= FRONT_END_ASSETS ?>images/banner/kosh_banner_mobile_001.jpg" class="d-lg-none d-md-none d-block img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="<?= FRONT_END_ASSETS ?>images/banner/kosh_banner_002.jpg" class="d-block img-fluid" alt="..." />
+              <img src="<?= FRONT_END_ASSETS ?>images/banner/kosh_banner_002.jpg" class="d-lg-block d-md-block d-none img-fluid" alt="..." />
+              <img src="<?= FRONT_END_ASSETS ?>images/banner/kosh_banner_mobile_002.jpg" class="d-lg-none d-md-none d-block img-fluid" alt="..." />
             </div>
         </div>
 
@@ -196,7 +198,7 @@ Banner Section
             </div>
         </div>
         <p class="col-12 text-center mb-0 mt-3">
-            <a class="btn btn-type1-reverse pulse animated go" href="<?= site_url('f/blog') ?>">See More</a>
+            <a class="btn btn-type1-reverse pulse animated go" href="<?= site_url('blogs') ?>">See More</a>
         </p>    
         </div>
     </div>

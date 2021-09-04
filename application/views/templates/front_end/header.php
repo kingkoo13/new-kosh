@@ -80,3 +80,4 @@
     <!-- jQuery -->  
     <script src="<?= ADMIN_ASSETS ?>bower_components/jquery/dist/jquery.min.js?v1"></script>
 </head>
+<body class="bg-white">
