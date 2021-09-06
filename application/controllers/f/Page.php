@@ -29,10 +29,10 @@ class Page extends CI_Controller {
 		//$this->front_end_layouts->view('templates/front_end/index');
 	}
 
-	public function about()
+	public function about_us()
 	{
 		$this->front_end_layouts->set_title('About Us');
-		$this->front_end_layouts->view('templates/front_end/about');
+		$this->front_end_layouts->view('templates/front_end/about_us');
 	}
 
 	public function vision_mission()

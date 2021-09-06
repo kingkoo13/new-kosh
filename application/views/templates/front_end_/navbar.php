@@ -4,7 +4,7 @@
 <div class="row">    
 <nav class="col-12 navbar navbar-expand-lg navbar-light px-lg-5 p-0 py-2">
     <div class="col-lg-2 col-6 navbar-header logo">
-        <a class="navbar-brand d-block p-0" href="<?= site_url('home') ?>">
+        <a class="navbar-brand d-block p-0" href="<?= site_url('f/home') ?>">
             <img src="<?= FRONT_END_ASSETS ?>images/kosh-logo.png" alt=" " class="img-responsive center-block desktop">
             <img src="<?= FRONT_END_ASSETS ?>images/kosh-logo-mobile.png" alt=" " class="img-responsive center-block mobile">
         </a>                
@@ -22,11 +22,11 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
     <ul class="navbar-nav px-4 p-lg-0 pt-2">
       <li class="nav-item">
-        <a class="nav-link" href="<?= site_url('home') ?>">Home</a>
+        <a class="nav-link" href="<?= site_url('f/home') ?>">Home</a>
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="<?= site_url('about-us') ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="<?= site_url('f/page/about') ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           About Us
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -75,30 +75,30 @@ $coache_profiles = array(
                 <p class="h2"><?php echo $coach_name; ?></p>
                 <p class="p font-weight-bold"><?php echo $coache_profile['short-description']; ?></p>
 
-                <div class="row m-0 p-0 my-2 text-dark">
+                <div class="row m-0 p-0 my-3 text-dark">
                     <div class="col-4 mb-0 h6 p-0 text-left">Experience</div>
-                    <div class="col-8 p text-left"><?php echo $coache_profile['experience']; ?></div>
+                    <div class="col-8 p text-left p-0"><?php echo $coache_profile['experience']; ?></div>
                 </div>
 
-                <div class="row m-0 p-0 my-2 text-dark">
+                <div class="row m-0 p-0 my-3 text-dark">
                     <div class="col-4 mb-0 h6 p-0 text-left">Specialization</div>
                     <div class="col-8 p text-left">
                         <?php 
                             foreach($coache_profile['specialization'] as $specialization){
                         ?>
-                            <a href="#" class="bg-light px-1 py-0 m-1 text-dark">
+                            <a href="#" class="bg-light pr-1 mr-1 py-0 text-dark">
                                 <?php echo $specialization; ?>
                             </a>              
                         <?php } ?>
                     </div>
                 </div>
 
-                <div class="row m-0 p-0 my-2 text-dark">
+                <div class="row m-0 p-0 my-3 text-dark">
                     <div class="col-4 mb-0 h6 p-0 text-left">Fee</div>
                     <div class="col-8 p text-left"><?php echo $coache_profile['fees']; ?></div>
                 </div>
 
-                <div class="row m-0 p-0 my-2 text-dark">
+                <div class="row m-0 p-0 my-3 text-dark">
                     <div class="col-4 mb-0 h6 p-0 text-left">Language</div>
                     <div class="col-8 p text-left"><?php echo $coache_profile['language']; ?></div>
                 </div>
