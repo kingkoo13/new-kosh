@@ -28,4 +28,16 @@ class User extends CI_Controller {
 		$this->front_end_layouts->set_title('User');
 		$this->front_end_layouts->view('templates/front_end/user');
 	}
+
+	public function user_login()
+	{
+		$this->front_end_layouts->set_title('User Login');
+		$this->front_end_layouts->view('templates/front_end/user_login');
+	}
+
+	public function user_signup()
+	{
+		$this->front_end_layouts->set_title('User Registration');
+		$this->front_end_layouts->view('templates/front_end/user_signup');
+	}
 }

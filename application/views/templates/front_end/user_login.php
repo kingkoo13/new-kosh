@@ -1,112 +1,33 @@
-<div class="container">
-    <div class="row">
-    <div class="col-12 my-3">
-        <h1 class="text-center text-dark text-capitalize"><?php echo basename($_SERVER['REQUEST_URI']); ?></h1>   
-    </div>
-
-</div>
-</div>
-<div class="mx-auto">
-    <img width="100%" height="400px" style="object-fit: cover;" class="img-responsive" src="<?= FRONT_END_ASSETS ?>images/blogs/blog_head.jpg" alt="" />
-</div>
-
-<section class="bg-white"> 
-<div class="container bg-white">
-    <div class="row">
-    <div class="col-12 mx-0 mt-5">
-        
-        <p class="h2 text-dark text-capitalize">Meet Our Coaches</p>
-        <p class="text-justify text-dark">
-            Our Coaches understand and empathize with Parents and their decades of experience of Parental Coaching helps them to serve better to join and guide the Parents in their journeys of Parenting. 
-        </p>
-    
-    <hr class="mt-5 border-0">
-    <?php 
-            $coaches = array(
-                                array(  'name' => 'They are Doing The Best They Can',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'We almost always assume that a child’s natural state is to be uncooperative and difficult and to get away with as much mischief and trouble as...',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
-
-                                array(  'name' => 'Teach Your Child To Apologize (Peacefully)',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'When we try to make our child apologize, we have to ask ourselves why and what they learn from that.  Of course we want the wronged person to feel...',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/07/Copy-of-Untitled-Design-1-400x250.png'),
-                               
-                                array(  'name' => 'The Train Wreck That Might Be Your Kids Right Now',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'Are you struggling with the kids more than usual lately?  Maybe when you go to wake your kiddo up for school they announce, “It’s not very sunny...',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/05/Picture2-400x250.jpg'),
-                               
-                                array(  'name' => 'They are Doing The Best They Can',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'Conscious Parenting Coach',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
-                               
-                                array(  'name' => 'They are Doing The Best They Can',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'Are you struggling with the kids more than usual lately?  Maybe when you go to wake your kiddo up for school they announce, “It’s not very sunny...',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
-                               
-                                array(  'name' => 'They are Doing The Best They Can',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'Conscious Parenting Coach',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
-                               
-                                array(  'name' => 'They are Doing The Best They Can',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'Conscious Parenting Coach',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
-                               
-                                array(  'name' => 'They are Doing The Best They Can',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'Conscious Parenting Coach',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
-                               
-                                array(  'name' => 'They are Doing The Best They Can',
-                                        'date' => 'Aug 24,2021',
-                                        'blog' => 'Conscious Parenting Coach',
-                                        'experience' => '18+ Years' ,
-                                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png')
-
-                            );
-    ?>
-    <div class="col-12 float-left m-0 p-0">
-    <?php
-            foreach ($coaches as $key => $coache) {
-    ?>      
-        <div class="col-lg-4 col-12 m-0 p-0  float-left">
-            <div class="card m-4 p-0 float-left shadow-bg mb-2 rounded">
-                    <a class="text-center m-0 p-0" href="<?php echo $coache['image']; ?>">
-                        <img src="<?php echo $coache['image']; ?>" class="img-responsive text-center m-auto pt-0" alt="Testimonials" style="background: #000; width: 100%;height: 200px;">
-                    </a>    
-                    <p class="h6 pt-3 mb-2 px-3 text-left" style="min-height: 60px;">
-                        <a class="text-dark text-capitalize" href="<?php echo $coache['name']; ?>">
-                            <?php echo $coache['name']; ?>
-                        </a>
-
-                    </p>
-                    <p class="p m-0 px-3 text-left text-dark mb-2">
-                        <?php echo $coache['date']; ?>
-                    </p>
-
-                    <div class="bg-light text-dark" style="min-height: 160px;">
-                        <p class="p m-0 p-3 text-left"><?php echo $coache['blog']; ?></p>
-                    </div>
+<hr class="mt-5 border-0">
+<div class="container gradient-custom text-dark">
+    <div class="row d-flex flex-column m-2">
+        <div class="col-lg-5 col-12 m-auto bg-light rounded p-0">
+        <div class="card">
+            <div class="card-header bg-light mb-4">
+                <h3 class="mb-0 my-2 text-center"><?php echo str_replace("-", " ", basename($_SERVER['REQUEST_URI']));; ?></h3>
             </div>
+            <div class="card-body col-10 m-auto">
+            <form>
+              <div class="form-group">
+                <label for="InputEmail1">Email address</label>
+                <input type="email" class="form-control" id="user_email" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="InputPassword1">Password</label>
+                <input type="password" class="form-control" id="pass_01" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-type1-reverse pulse animated go float-right">Submit</button>
+        </form>
         </div>
-    <?php   }  ?>
-    </div>
-    
     </div>
     </div>
+    <div class="col-lg-5 col-12 m-auto text-center p-3">
+        <span class="text-center">Don't have an account</span>
+        <a class="text-center h6" href="<?= site_url('user-signup') ?>">Sign Up</a>
+        <span class="text-center">here</span>
+    </div>    
 </div>
-</section>   
+</div>
+
+<hr class="mt-5 border-0">   

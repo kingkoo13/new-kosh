@@ -11,7 +11,7 @@
     </div>
     <div class="col-lg-auto col-6 user d-flex flex-row-end d-lg-none m-0 p-0">
         <div class="col-6 d-lg-none"></div>
-        <a class="d-lg-none mt-2 h5" href="<?= site_url('f/user') ?>"><span class="fa fa-user px-2 pt-1"></span></a>
+        <a class="d-lg-none mt-2 h5" href="<?= site_url('user-login') ?>"><span class="fa fa-user px-2 pt-1"></span></a>
         
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,11 +29,11 @@
         <a class="nav-link dropdown-toggle" href="<?= site_url('about-us') ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           About Us
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?= site_url('vision-mission') ?>">Vision & Misson</a>
-          <a class="dropdown-item" href="<?= site_url('founders') ?>">Founders</a>
-          <a class="dropdown-item" href="<?= site_url('journey') ?>">Journey</a>
-          <a class="dropdown-item" href="<?= site_url('mentors') ?>">Mentors</a>
+        <div class="mt-0 pt-0 dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="px-4 py-3 dropdown-item" href="<?= site_url('vision-mission') ?>">Vision & Misson</a>
+          <a class="px-4 py-3 dropdown-item" href="<?= site_url('founders') ?>">Founders</a>
+          <a class="px-4 py-3 dropdown-item" href="<?= site_url('journey') ?>">Journey</a>
+          <a class="px-4 py-3 dropdown-item" href="<?= site_url('mentors') ?>">Mentors</a>
         </div>
         </li>
         <li class="nav-item list-inline-item">

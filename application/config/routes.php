@@ -76,6 +76,7 @@ $route['faqs'] = "f/page/faqs" ;
 $route['press'] = "f/page/press" ;
 $route['careers'] = "f/page/careers" ;
 $route['blogs'] = "f/page/blogs" ;
+$route['blog'] = "f/page/blog" ;
 $route['contact-us'] = "f/page/contact_us" ;
 $route['support'] = "f/page/support" ;
 $route['vision-mission'] = "f/page/vision_mission" ;
@@ -83,7 +84,11 @@ $route['founders'] = "f/page/founders" ;
 $route['journey'] = "f/page/journey" ;
 $route['mentors'] = "f/page/mentors" ;
 $route['coaches'] = "f/coaches" ;
-$route['user-login'] = "f/page/user_login" ;
+$route['user-login'] = "f/user/user_login" ;
+$route['user-signup'] = "f/user/user_signup" ;
+$route['appointment'] = "f/appointment" ;
+
+
 
 
 

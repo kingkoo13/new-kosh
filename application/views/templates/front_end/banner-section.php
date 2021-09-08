@@ -48,7 +48,7 @@ Banner Section
 
 
 <div class="d-flex justify-content-center vertical-middle visible-block-sm-xs text-center animatedParent animateOnce">
-    <a href="http://localhost/new-kosh/f/appointment/" class="btn btn-type1-reverse pulse animated go"> Book a Free Session</a>
+    <a href="http://localhost/new-kosh/appointment/" class="btn btn-type1-reverse pulse animated go"> Book a Free Session</a>
 </div>
 
 <hr class="mt-5 border-0">

@@ -1134,7 +1134,7 @@ h5 {
     }
 }
 body {
-    font-family: Roboto, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 15px;
     background: #efefef;
     color: #777;
@@ -1913,7 +1913,7 @@ section:nth-child(odd).white-bg .pentagon .mask:before {
 }
 [class*="quotes"]::after,
 [class*="quotes"]::before {
-    font-family: Roboto, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 60px;
     color: #324c73;
     line-height: 0.1em;
@@ -3995,12 +3995,13 @@ h1 {
 }
 
 .zoom {
-  transition: transform .4s; /* Animation */
+  transition: transform .01s; /* Animation */
   margin: 0 auto;
 }
 
 .zoom:hover {
   transform: scale(.93); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
 }
 
 .shadow-bg {
@@ -4010,3 +4011,7 @@ h1 {
 
 #testimonials .carousel-indicators{margin-bottom: -50px;}
 
+.border-dotted{
+ border-style: dotted;
+ border-color: #c9059a;
+}

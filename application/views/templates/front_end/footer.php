@@ -41,7 +41,7 @@
                 
                     <div class="col-lg-12 mt-5">
                         <div class="row text-center">
-                            <div class="col-lg-4 mb-3">
+                            <div class="col-lg-4 col-6 mb-3">
                                 <ul class="list-unstyled list-inline">
                                     <li class="mb-4">
                                         <a class="h5" href="<?= site_url('all-programs') ?>" role="button">Programs</a>
@@ -64,7 +64,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-4 mb-3">
+                            <div class="col-lg-4 col-6 mb-3">
                                 <ul class="list-unstyled list-inline">
                                     <li class="mb-4">
                                         <a class="h5" href="<?= site_url('about-us') ?>" role="button">About Us </a>
@@ -93,7 +93,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-4 mb-3">
+                            <div class="col-lg-4 col-6 mb-3">
                                 <ul class="list-unstyled list-inline">
                                     <li class="mb-4">
                                         <a class="h5" href="<?= site_url('contact-us') ?>" role="button">Contact Us </a>

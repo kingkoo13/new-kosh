@@ -113,6 +113,12 @@ class Page extends CI_Controller {
 		$this->front_end_layouts->view('templates/front_end/blogs');
 	}
 
+	public function blog()
+	{
+		$this->front_end_layouts->set_title('Blog');
+		$this->front_end_layouts->view('templates/front_end/blog');
+	}
+
 	public function support()
 	{
 		$this->front_end_layouts->set_title('Support');
@@ -137,9 +143,6 @@ class Page extends CI_Controller {
 		$this->front_end_layouts->view('templates/front_end/faqs');
 	}
 
-	public function user_login()
-	{
-		$this->front_end_layouts->set_title('User Login');
-		$this->front_end_layouts->view('templates/front_end/user_login');
-	}
+	
+
 }
