@@ -7,7 +7,8 @@
     </div>
 </div>
 <div class="mx-auto">
-    <img width="100%" height="400px" style="object-fit: cover;" class="img-responsive" src="<?= FRONT_END_ASSETS ?>images/blogs/blog_head.jpg" alt="" />
+    <img src="<?= FRONT_END_ASSETS ?>images/blogs-banner.jpg" class="d-lg-block d-md-block d-none img-fluid" alt="..."/>
+    <img src="<?= FRONT_END_ASSETS ?>images/blogs-banner.jpg" class="d-lg-none d-md-none d-block img-fluid" alt="...">
 </div>
 
 <section class="bg-white"> 
@@ -15,69 +16,62 @@
         <div class="row">
             <div class="col-12 mx-0 mt-5">
 
-                <p class="h2 text-dark text-capitalize">Meet Our Coaches</p>
-                <p class="text-justify text-dark">
-                    Our Coaches understand and empathize with Parents and their decades of experience of Parental Coaching helps them to serve better to join and guide the Parents in their journeys of Parenting. 
-                </p>
-
                 <hr class="mt-5 border-0">
-                <?php 
-                $blogs = array(
-                    array(  'name' => 'They are Doing The Best They Can',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'We almost always assume that a child’s natural state is to be uncooperative and difficult and to get away with as much mischief and trouble as...',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
+                <?php
 
-                    array(  'name' => 'Teach Your Child To Apologize (Peacefully)',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'When we try to make our child apologize, we have to ask ourselves why and what they learn from that.  Of course we want the wronged person to feel...',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/07/Copy-of-Untitled-Design-1-400x250.png'),
 
-                    array(  'name' => 'The Train Wreck That Might Be Your Kids Right Now',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'Are you struggling with the kids more than usual lately?  Maybe when you go to wake your kiddo up for school they announce, “It’s not very sunny...',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/05/Picture2-400x250.jpg'),
+                // echo "<pre>";var_dump($wp_users);   
+                //echo "<pre>";print_r(expression)$blog_data[4];   
+                //$post_status = $blog_data[0]->post_status;
 
-                    array(  'name' => 'They are Doing The Best They Can',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'Conscious Parenting Coach',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
+                 //echo $wp_users[0]->ID;
+                /*global $wp_user;
+                function getUser($userId){
 
-                    array(  'name' => 'They are Doing The Best They Can',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'Are you struggling with the kids more than usual lately?  Maybe when you go to wake your kiddo up for school they announce, “It’s not very sunny...',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
+                 foreach($wp_users as $key02 => $wp_user){
+                    $User_data[$wp_user->ID] = $wp_user->display_name;
+                    return $User_data;
+                 }   
+                }*/
+                 
+                /*wp blog filtering only image from content*/
 
-                    array(  'name' => 'They are Doing The Best They Can',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'Conscious Parenting Coach',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
+                function catch_that_image($post_content) {
+                  $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post_content, $matches);
+                  $first_img = $matches [1] [0];
 
-                    array(  'name' => 'They are Doing The Best They Can',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'Conscious Parenting Coach',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
+                  if(empty($first_img)){ //Defines a default image
+                    $first_img = "/images/default.jpg";
+                  }
+                  return $first_img;
+                }
 
-                    array(  'name' => 'They are Doing The Best They Can',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'Conscious Parenting Coach',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png'),
+                /*wp blog filtering first paragraph*/
+                function wp_first_paragraph($content) {
+                    $first_paragraph_str = $content;
+                    $first_paragraph_str = substr($first_paragraph_str, 0, strpos($first_paragraph_str, '</p>') + 4);
+                    $first_paragraph_str = strip_tags($first_paragraph_str, '<a><strong><em>');
+                    return '<p>' . $first_paragraph_str . '</p>';
+                }
 
-                    array(  'name' => 'They are Doing The Best They Can',
-                        'date' => 'Aug 24,2021',
-                        'blog' => 'Conscious Parenting Coach',
-                        'experience' => '18+ Years' ,
-                        'image' => 'https://www.sarahrosensweet.com/wp-content/uploads/2021/08/Theyre-Doing-The-Best-They-Can-3-400x250.png')
 
-                );
+
+                  
+                
+                foreach($blog_data as $key1 => $blog){
+                    if($blog->post_status == 'publish' && $blog->post_type == 'post')
+                    {
+                        
+                        $blogs[] = array('name' => $blog->post_title ,
+                            'date' => date("Y-m-d", strtotime($blog->post_date)),
+                            'blog' => wp_first_paragraph($blog->post_content),
+                            'post_author' => $blog->post_author,
+                            'image' => catch_that_image($blog->post_content)
+                        );    
+                    }
+                    
+                }
+
                 ?>
                 <div class="col-12 float-left m-0 p-0">
                     <?php
@@ -95,12 +89,16 @@
                                     </a>
 
                                 </p>
-                                <p class="p m-0 px-3 text-left text-dark mb-2">
-                                    <?php echo $blog['date']; ?>
-                                </p>
-
-                                <div class="bg-light text-dark" style="min-height: 160px;">
-                                    <p class="p m-0 p-3 text-left"><?php echo $blog['blog']; ?></p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2"><?php echo $blog['date']; ?></div>
+                                    <div class="p-2"><?php // echo $blog['post_author']; ?></div>
+                                </div>
+                                
+                                <div class="bg-light text-dark px-2" style="min-height: 150px;">
+                                    <style>
+                                        figure.wp-block-image {display: none;}
+                                    </style>
+                                    <p class="p m-0 text-left"><?php  echo substr($blog['blog'],0 ,150)." ..."; ?></p>
                                 </div>
                             </div>
                         </div>

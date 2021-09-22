@@ -29,8 +29,12 @@
                                     <label for="inputVerify3">Verify</label>
                                     <input type="password" class="form-control" id="inputVerify3" placeholder="password (again)" required="">
                                 </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-type1-reverse pulse animated go float-right">Register</button>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col text-center">
+                                      <button type="submit" class="btn btn-type1-reverse pulse animated go flex-align-self">Submit</button>
+                                    </div>
+                                  </div>
                                 </div>
                             </form>
                         </div>

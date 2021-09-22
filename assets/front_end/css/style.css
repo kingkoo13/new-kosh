@@ -1231,7 +1231,7 @@ a {
 }
 a:focus,
 a:hover {
-    color: #333;
+    color: #c9059a !important;
     text-decoration: none;
     outline: 0;
 }
@@ -4012,6 +4012,8 @@ h1 {
 #testimonials .carousel-indicators{margin-bottom: -50px;}
 
 .border-dotted{
- border-style: dotted;
+ border-style: outset;
  border-color: #c9059a;
 }
+
+.box_shadow{box-shadow: 0px 0px 15px 5px #888;}

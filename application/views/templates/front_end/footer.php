@@ -1,18 +1,25 @@
 <!-- Footer Section
 ================================= -->
 <!-- Footer Top Strip -->
-	<div class="top-strip bg-white">
+	<div class="top-strip bg-white text-dark mb-3">
     	<div class="container">
-            <div class="row vertical-align">
+            <div class="row">
                     
                 <div class="col-12 m-auto">
-                    <div class="d-flex justify-content-center bd-highlight mb-3">
-                        <div class="p-2 bd-highlight">
-                            <i class="fa fa-phone icon-bordered"></i>
+                    <div class="d-flex justify-content-lg-center flex-lg-row flex-column">
+                        <div class="col-lg-3 col-12 py-2">
+                            <div class="bd-highlight">
+                                <i class="fa fa-envelope icon-bordered pull-left"></i>
+                                <span class="d-block text-center  py-2"><a href="mailto:<?= EMAIL ?>" class="color-light"> <?= EMAIL ?></a></span>
+                            </div>
                         </div>
-                      <div class="p-2 bd-highlight">
-                          <span class="d-block mt-2">Reach out to our experts at <span class="bold color-light"> <?= PHONE_NUMBER ?></span></span>
-                      </div>
+                        
+                        <div class="col-lg-3 col-12 py-2">    
+                            <div class="bd-highlight">
+                                <i class="fa fa-phone icon-bordered pull-left"></i>
+                                <span class="d-block text-center  py-2"><a href="tel:<?= PHONE_NUMBER ?>" class="color-light"> <?= PHONE_NUMBER ?></a></span>
+                            </div>
+                        </div>
                     </div> 
                 </div>
                 
@@ -75,7 +82,7 @@
                                     </li>
 
                                     <li>
-                                        <a class="h7" href="<?= site_url('faqs') ?>" role="button">Faq's </a>
+                                        <a class="h7" href="<?= site_url('faqs') ?>" role="button">FAQs </a>
                                     </li>
 
 
@@ -83,10 +90,6 @@
                                         <a class="h7" href="<?= site_url('press') ?>" role="button">Press </a>
                                     </li>
 
-
-                                    <li>
-                                        <a class="h7" href="<?= site_url('careers') ?>" role="button">Careers </a>
-                                    </li>
 
                                     <li>
                                         <a class="h7" href="<?= site_url('blogs') ?>">Blogs </a>

@@ -48,6 +48,7 @@ define('IMAGE_PATH', getenv('BASE_URL') . '/' . getenv('IMAGE_PATH'));
 */
 
 define('PHONE_NUMBER', getenv('PHONE_NUMBER'));
+define('EMAIL', getenv('EMAIL'));
 
 /*
 |--------------------------------------------------------------------------
@@ -156,3 +157,8 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+
+define('RAZOR_KEY_ID', 'rzp_test_A9mBX1PTMUkl1r');
+define('RAZOR_KEY_SECRET', 'QNCdWRDcwnq2G9zPnlLcVaJp');

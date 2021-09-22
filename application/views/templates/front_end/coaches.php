@@ -6,7 +6,7 @@
             
             <h2 class="text-dark text-capitalize text-center">Meet Our Coaches</h2>
             <p class="text-justify text-dark">
-                Our Coaches understand and empathize with Parents and their decades of experience of Parental Coaching helps them to serve better to join and guide the Parents in their journeys of Parenting. 
+                Our coaches understand and empathize with parents and their decades of experience of parental coaching helps them to serve better to join and guide the parents in their journeys of parenting. 
             </p>
         </div>
     </div>
@@ -15,19 +15,19 @@
 
     <?php 
             $coaches = array(
+                                array(  'name' => 'Priya Dharod' ,
+                                        'designation' => 'Founder',
+                                        'description' => 'Human Resource Professional',    
+                                        'experience' => '15 Years' ,
+                                        'specialization' => array('Organization Development','Leadership Development'),
+                                        'fees' => 'Rs. 6500 / 30 mins'),
+
                                 array(  'name' => 'Swati Sinha' ,
-                                        'designation' => 'Co-Founder',
+                                        'designation' => 'Advisor',
                                         'description' => 'Conscious Parenting Coach',
                                         'experience' => '18+ Years' ,
                                         'specialization' => array('Certified Parenting Coach'),
                                         'fees' => 'Rs. 7500 / 30 mins'),
-
-                                array(  'name' => 'Priya Dharod' ,
-                                        'designation' => 'Co-Founder',
-                                        'description' => 'Human Resource professional',    
-                                        'experience' => '15 Years' ,
-                                        'specialization' => array('Organization Development','Leadership Development'),
-                                        'fees' => 'Rs. 6500 / 30 mins'),
                                
                                 array(  'name' => 'Jayanthi Bakshi' ,
                                         'designation' => 'Coach',

@@ -41,38 +41,38 @@ Banner Section
 ================================= -->
 <div class="d-flex justify-content-center">
     <div class="col-12 mt-5 mb-3">
-        <p class="hp_txt_01 h1 text-center">Nurturing the parent - child bond one family at a time</p>
-        <p class="hp_txt_02 h6 text-center mt-4 text-dark">Be a part of the Conscious Parenting Ecosystem ~ Get a free session for 15 mins with world renowned parenting coaches</p>
+        <p class="hp_txt_01 h1 text-center">Nurturing the Parent - Child bond one family at a time</p>
+        <p class="hp_txt_02 h6 text-center mt-4 text-dark">Be a part of the Conscious Parenting Ecosystem ~ Get a free discovery session for 15 mins with world renowned parenting coaches</p>
     </div>    
 </div>
 
 
 <div class="d-flex justify-content-center vertical-middle visible-block-sm-xs text-center animatedParent animateOnce">
-    <a href="http://localhost/new-kosh/appointment/" class="btn btn-type1-reverse pulse animated go"> Book a Free Session</a>
+    <a href="<?= site_url('contact-us') ?>" class="btn btn-type1-reverse pulse animated go"> Book a Free Session</a>
 </div>
 
 <hr class="mt-5 border-0">
 
 <!-- mid page 3 image slider -->
 <?php
-        $programs = array(  "academics-&-performance",
-                            "behaviour",
-                            "body-image",
-                            "specific-concern-areas",
-                            "conscious-parenting",
-                            "teenagers",
-                            "thrive-beyond-trauma",
-                            "screens-&-addiction",
-                            "wow-parenting",
-                            "discipline",
-                            "stress-anxiety-&-depression",
-                            "nutrition-&-wellness"
+        $programs = array(  "academics-and-performance" => "academics-&-performance",
+                            "behaviour" => "behaviour",
+                            "body-image" => "body-image",
+                            "specific-concern-areas" => "specific-concern-areas",
+                            "conscious-parenting" => "conscious-parenting",
+                            "teenagers" => "teenagers",
+                            "thrive-beyond-trauma" => "thrive-beyond-trauma",
+                            "screens-and-addiction" => "screens-&-addiction",
+                            "wow-parenting" => "wow-parenting",
+                            "discipline" => "discipline",
+                            "stress-anxiety-and-depression" => "stress-anxiety-&-depression",
+                            "nutrition-and-wellness" => "nutrition-and-wellness"
                             
                         ); 
 ?>
 <div class="d-flex justify-content-center vertical-middle visible-block-sm-xs text-center mt-5">
     <div class="">
-        <p class="h4 color-light mb-3">Our Programmes</p>
+        <p class="h4 color-light mb-3">Our Programs</p>
     </div>   
 </div> 
 
@@ -80,11 +80,14 @@ Banner Section
     <div class="row">
     <div class="col-12 m-auto m-0 p-0">
         <?php foreach($programs as $key => $program){  ?>
-            <div class="col-lg-2 col-6 p-0 m-0 float-left zoom">
+            <div class="col-lg-2 col-md-4 col-6 p-0 m-0 float-left zoom">
                 <div class="demo-content p-0 m-lg-1 ml-1 mr-1 mb-1 mt-1 rounded text-center position-static">
-                    <img class="shadow-bg col-12 m-0 p-0" style="object-fit: cover;" width="auto" height="175px" src="<?= FRONT_END_ASSETS ?>/images/programs/<?php echo $program; ?>.png " />
+                    <a href="<?= site_url('program'); ?>?name=<?php echo str_replace(' ', '-', $key); ?>">
+                    <img class="shadow-bg col-12 m-0 p-0" style="object-fit: cover;" width="auto" height="175px" src="<?= FRONT_END_ASSETS ?>/images/programs/<?php echo $key; ?>.png " />
                     <span class="p position-absolute fixed-bottom text-white mb-2 text-capitalize px-1">
-                        <?php echo str_replace("-", " ", $program); ?></span>
+                        <?php echo str_replace("-", " ", $program); ?>
+                    </span>
+                    </a>
                 </div>
             </div>
         <?php } ?> 
@@ -120,7 +123,7 @@ Banner Section
             </div>
             <div class="text-center">
                 <h4 class="know_us_t1">250+</h4>
-                <p class="h6 know_us_t2 text-dark text-capitalize">Satisfied Parents</p>
+                <p class="h6 know_us_t2 text-dark text-capitalize">Fulfilled Families</p>
             </div>
         </div>
         <div class="col-6">
@@ -129,7 +132,7 @@ Banner Section
             </div>
         <div class="text-center">
             <h4 class="know_us_t1">10+</h4>
-                <p class="h6 know_us_t2 text-dark text-capitalize">Corporate parenting Workshops</p>
+                <p class="h6 know_us_t2 text-dark text-capitalize">Corporate Parenting Workshops</p>
         </div>
         </div>
     </div>    
@@ -140,7 +143,7 @@ Banner Section
             </div>
             <div class="text-center">
                 <h4 class="know_us_t1">4000+</h4>
-                <p class="h6 know_us_t2 text-dark text-capitalize">Content Employees</p>
+                <p class="h6 know_us_t2 text-dark text-capitalize">Satisfied Employees</p>
             </div>
         </div>
         <div class="col-6">
@@ -170,14 +173,14 @@ Banner Section
         </div> 
         <div class="card-group">
           <div class="col-lg-12 col-sm-12 card m-auto px-0">
-            <iframe width:100% height="370px" src="https://www.youtube.com/embed/higpx_lG728?rel=0&enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen;"></iframe>
+            <iframe class="border-0" width:100% height="370px" src="https://www.youtube.com/embed/higpx_lG728" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen;"></iframe>
           </div>       
         </div>
         <div class="col-12 p-0 mt-1">
             <div class="p-lg-2 p-1 d-flex justify-content-center">
                 <!--span class="py-3 text-dark">Subscribe to get free parenting tips</span-->    
                 <button type="button" class="btn-type1-reverse">
-                    <a href="#" class="button text-white text-capitalize">Subscribe for free Parenting tips</a>
+                    <a href="https://www.youtube.com/channel/UCGeW7fCRh_nsld1RYBTKc4A" class="button text-white text-capitalize">Subscribe for free Parenting tips</a>
                 </button>    
             </div>
         </div>
@@ -185,7 +188,7 @@ Banner Section
 
         <div class="col-lg-6">    
         <div class="d-flex justify-content-center vertical-middle visible-block-sm-xs text-center mt-5 bg-white mb-2">
-            <div class="h4 color-light mb-3">Blog</div>
+            <div class="h4 color-light mb-3">Blogs</div>
         </div> 
         <div class="card-group shadow-bg">
           <div class="col-lg-12 col-sm-12 card m-auto px-0">
@@ -193,7 +196,7 @@ Banner Section
           </div>
           <div class="card-body">
                   <h5 class="card-title">Sibling Relationships</h5>
-                  <p class="card-text text-dark">A well-placed couple, wished to start a family after two years of marriage. Lucky they were, when things went just as planned and, soon made a very...</p>
+                  <p class="card-text text-dark">A well-placed couple, wished to start a family after two years of marriage. Lucky they were, when things went just as planned and, soon made...</p>
                   <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
             </div>
         </div>
@@ -213,9 +216,9 @@ Banner Section
     <?php
 
             $testimonials = array(
-                                    array('image' => 'Prafulla','name' => 'Prafulla','short-description' => 'Mom of 5-year-old daughter and Restaurant owner in Mumbai','description' => 'I came to know about Swati and Kosh parenting initiative through one of my common friends when I had difficulty in settling down my 5-year-old on to her day today schedules during pandemic. It was such a transforming experience meeting her and talking to her. She made me comfortable in the first session itself and helped me to navigate the path by my own self so that it can be sustained for lifetime'),
-                                    array('image' => 'Prafulla','name' => 'Prafulla','short-description' => 'Mom of 5-year-old daughter and Restaurant owner in Mumbai','description' => 'I came to know about Swati and Kosh parenting initiative through one of my common friends when I had difficulty in settling down my 5-year-old on to her day today schedules during pandemic. It was such a transforming experience meeting her and talking to her. She made me comfortable in the first session itself and helped me to navigate the path by my own self so that it can be sustained for lifetime'),
-                                    array('image' => 'Prafulla','name' => 'Prafulla','short-description' => 'Mom of 5-year-old daughter and Restaurant owner in Mumbai','description' => 'I came to know about Swati and Kosh parenting initiative through one of my common friends when I had difficulty in settling down my 5-year-old on to her day today schedules during pandemic. It was such a transforming experience meeting her and talking to her. She made me comfortable in the first session itself and helped me to navigate the path by my own self so that it can be sustained for lifetime')
+                                    array('type'=>'text', 'image' => 'Prafulla','name' => 'Prafulla','short-description' => 'Mom of 5-year-old daughter and Restaurant owner in Mumbai','description' => 'I came to know about Swati and Kosh parenting initiative through one of my common friends when I had difficulty in settling down my 5-year-old on to her day today schedules during pandemic. It was such a transforming experience meeting her and talking to her. She made me comfortable in the first session itself and helped me to navigate the path by my own self so that it can be sustained for lifetime'),
+                                    array('type'=>'video', 'url' => 'https://koshglobal.in/wp-content/uploads/2021/07/WhatsApp-Video-2021-07-08-at-5.53.43-PM.mp4'),
+                                    array('type'=>'text', 'image' => 'Prafulla','name' => 'Prafulla','short-description' => 'Mom of 5-year-old daughter and Restaurant owner in Mumbai','description' => 'I came to know about Swati and Kosh parenting initiative through one of my common friends when I had difficulty in settling down my 5-year-old on to her day today schedules during pandemic. It was such a transforming experience meeting her and talking to her. She made me comfortable in the first session itself and helped me to navigate the path by my own self so that it can be sustained for lifetime')
                                 ); 
 
         ?>    
@@ -226,7 +229,7 @@ Banner Section
         <div class="col-12 text-center mt-5 mb-lg-0 mb-3 bg-white">
             <div class="h4 color-light mb-3">Testimonials</div>
         </div>
-        <div class="col-lg-9 m-auto shadow-bg py-3"> 
+        <div class="col-lg-9 col-11 m-auto shadow-bg py-3"> 
             
             <div id="testimonials" class="col-lg-12 carousel slide p-0 col-lg-6 m-auto" data-ride="carousel">
                 
@@ -238,12 +241,14 @@ Banner Section
 
                 <div class="card carousel-inner">
                 <?php foreach ($testimonials as $key => $testimonial) { ?>
+                <?php if($testimonial['type']== 'text'): ?>  
+                <!-- text slider -->  
                 <div class="carousel-item <?php if($key == '0'){echo 'active';}?>">
                   <div class="d-flex">
-                  <div class="col-lg-3 col-6 pt-2">
-                      <img src="<?= FRONT_END_ASSETS ?>images/home/testimonial-1-150x150.png" class="img-responsive rounded-circle text-center col-lg-12 col-12 mx-4 m-0 p-0 pink_circle" alt="Testimonials">
+                  <div class="col-lg-3 col-5 pt-2">
+                      <img src="<?= FRONT_END_ASSETS ?>images/home/testimonial-1-150x150.png" class="img-responsive rounded-circle text-center col-lg-12 col-12 mx-lg-4 m-0 p-0 pink_circle" alt="Testimonials">
                   </div> 
-                  <div class="col-lg-9 col-6 pt-lg-5 pt-4 mx-4">
+                  <div class="col-lg-9 col-7 pt-lg-5 pt-4 mx-lg-4">
                       <p class="h3 text-left text-dark">
                         <?php echo $testimonial['name'];  ?>
                     </p>
@@ -254,10 +259,18 @@ Banner Section
                   </div> 
                   <div class="card-body py-0">
                     <p class="text-justify pt-3 text-dark">
-                        <?php echo $testimonial['description'];  ?>
+                        <?php echo $testimonial['description']; ?>
                     </p>
                   </div>
                 </div>
+                <!-- video slider -->
+                <?php elseif ($testimonial['type'] == 'video'): ?>
+                <div class="carousel-item <?php if($key == '0'){echo 'active';}?>">
+                  <div class="d-flex col-12 m-0 p-0 border-0">
+                    <iframe class="col-12 m-0 p-0 border-0" width:100% height="329px" src="<?php echo $testimonial['url']; ?>" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen;"></iframe>
+                  </div>
+                </div>    
+                <?php endif; ?>
                 <?php } ?>
                 </div>
 
@@ -298,7 +311,7 @@ Banner Section
 <div class="row m-0">    
     <div class="col-12 d-lg-flex justify-content-center m-auto">
     <div class="col-lg-6 col-12 rounded my-4 position-relative shadow-bg float-left">
-        <div class="col-lg-12 col-12 py-3 float-left">
+        <div class="col-lg-12 col-12 py-lg-3 py-0 float-left">
             <div class="col-lg-4 col-5 float-left position-absolute fixed-bottom mb-2">
                 <img class="img-responsive rounded-circle w-100 h-100 border border-primary" alt="" src="<?= FRONT_END_ASSETS ?>images/home/know_us_001.jpg" style="height: 150px;width: 150px;object-fit: cover;" />
             </div>

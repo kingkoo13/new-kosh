@@ -71,6 +71,12 @@ class Page extends CI_Controller {
 		$this->front_end_layouts->view('templates/front_end/all_programs');
 	}
 
+	public function program()
+	{
+		$this->front_end_layouts->set_title('Program');
+		$this->front_end_layouts->view('templates/front_end/program');
+	}
+
 	public function membership()
 	{
 		$this->front_end_layouts->set_title('Membership');
@@ -110,7 +116,10 @@ class Page extends CI_Controller {
 	public function blogs()
 	{
 		$this->front_end_layouts->set_title('Blogs');
-		$this->front_end_layouts->view('templates/front_end/blogs');
+		$this->load->model('f/blog_model');
+		$data['blog_data'] = $this->blog_model->wp_posts(); 
+		$data['wp_users'] = $this->blog_model->wp_users(); 
+		$this->front_end_layouts->view('templates/front_end/blogs', $data);
 	}
 
 	public function blog()
@@ -143,6 +152,27 @@ class Page extends CI_Controller {
 		$this->front_end_layouts->view('templates/front_end/faqs');
 	}
 
-	
+	/*razor pay */
 
+	public function pay()
+	{
+		$data['inputs'] = $this->input->post();
+		
+		$data['razorpay_keys'] = [
+			'keyId' => RAZOR_KEY_ID,
+			'secretKey' => RAZOR_KEY_SECRET
+		];
+		
+		//print_r($data);
+	
+		$this->front_end_layouts->view('templates/front_end/razorpay/pay',$data);
+	}
+
+	public function verify(){
+		$this->front_end_layouts->set_title('success');
+		//$data['response'] = $this->input->post();
+		$this->front_end_layouts->view('templates/front_end/razorpay/verify');
+	}
+	
+	/*razor pay */
 }

@@ -27,10 +27,10 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="<?= site_url('about-us') ?>" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          About Us
+          About Kosh
         </a>
         <div class="mt-0 pt-0 dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="px-4 py-3 dropdown-item" href="<?= site_url('vision-mission') ?>">Vision & Misson</a>
+          <a class="px-4 py-3 dropdown-item" href="<?= site_url('about-us') ?>">About Us</a>
           <a class="px-4 py-3 dropdown-item" href="<?= site_url('founders') ?>">Founders</a>
           <a class="px-4 py-3 dropdown-item" href="<?= site_url('journey') ?>">Journey</a>
           <a class="px-4 py-3 dropdown-item" href="<?= site_url('mentors') ?>">Mentors</a>
@@ -40,7 +40,10 @@
         <a class="nav-link" href="<?= site_url('coaches') ?>">Coaches</a>
         </li>
         <li class="nav-item list-inline-item">
-            <a class="nav-link" href="<?= site_url('partnerships') ?>">Partner with us</a>
+            <a class="nav-link" href="<?= site_url('contact-us') ?>">Partner with us</a>
+        </li>
+        <li class="nav-item list-inline-item">
+            <a class="nav-link" href="<?= site_url('all-programs') ?>">Programs</a>
         </li>
         <li class="nav-item list-inline-item">
             <a class="nav-link" href="<?= site_url('contact-us') ?>">Contact Us</a>

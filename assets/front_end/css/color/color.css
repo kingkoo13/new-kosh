@@ -138,7 +138,7 @@ a.reverse:focus {
 }
 
 .icon-bordered {
-    border: 3px solid #c9059a;
+    border: 0px solid #c9059a;
 }
 
 .center-banner-title .label {
@@ -651,4 +651,8 @@ footer .table-min .dl-horizontal {
 .pink_circle {
     border: 5px solid #c9059a;
     background: #000;
+}
+
+.text_pink{
+    color: #c9059a !important ;
 }

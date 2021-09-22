@@ -15,6 +15,11 @@ class ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'R' => 
+        array (
+            'Razorpay\\Tests\\' => 15,
+            'Razorpay\\Api\\' => 13,
+        ),
         'P' => 
         array (
             'PhpOption\\' => 10,
@@ -30,6 +35,14 @@ class ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Razorpay\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/razorpay/razorpay/tests',
+        ),
+        'Razorpay\\Api\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/razorpay/razorpay/src',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
@@ -37,6 +50,16 @@ class ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'R' => 
+        array (
+            'Requests' => 
+            array (
+                0 => __DIR__ . '/..' . '/rmccue/requests/library',
+            ),
         ),
     );
 
@@ -49,6 +72,7 @@ class ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitf9976c8fb45312b6f5bc70a6fa220165::$classMap;
 
         }, null, ClassLoader::class);

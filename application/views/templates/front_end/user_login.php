@@ -6,19 +6,80 @@
             <div class="card-header bg-light mb-4">
                 <h3 class="mb-0 my-2 text-center"><?php echo str_replace("-", " ", basename($_SERVER['REQUEST_URI']));; ?></h3>
             </div>
+            <?php 
+                    
+                    if($this->session->flashdata('error_message'))
+                    {
+            ?>
+                    <p class="alert alert-danger alert-dismissable fade in text-center top-height">
+                    <?= $this->session->flashdata('error_message');  ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        </p>
+                    <?php
+                        }
+            ?>
             <div class="card-body col-10 m-auto">
-            <form>
-              <div class="form-group">
-                <label for="InputEmail1">Email address</label>
-                <input type="email" class="form-control" id="user_email" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="InputPassword1">Password</label>
-                <input type="password" class="form-control" id="pass_01" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-type1-reverse pulse animated go float-right">Submit</button>
-        </form>
+            <?= form_open('f/login/login_lookup','role="form"'); ?>    
+                <?= form_fieldset(); ?> 
+                <div class="form-group">
+                    <?php 
+                    $data_name = array(
+                        'name'          => 'email',
+                        'id'            => 'email',
+                        'placeholder'   => 'E-mail or Phone Number',
+                        'class'         => 'form-control',
+                        'value'         => set_value('email'),
+                        'autofocus'     => 'autofocus',
+                        'autocomplete'  => 'off'
+                    );
+                    $attributes = array(
+                            'class' => 'text-dark',
+                            'style' => 'font-weight: bold;'
+                    );
+                
+                ?>
+
+                <?= form_label('E-mail or Phone', 'email', $attributes); ?>
+                <?= form_input($data_name); ?>
+                </div>
+
+                <div class="form-group">
+                    <?php 
+                    $data = array(
+                        'name'          => 'password',
+                        'id'            => 'password',
+                        'placeholder'   => 'Enter your password',
+                        'class'         => 'form-control',
+                        'value'         => set_value('email'),
+                        'autofocus'     => 'autofocus',
+                        'autocomplete'  => 'off',
+                    );
+                    $attributes = array(
+                            'class' => 'text-dark',
+                            'style' => 'font-weight: bold;'
+                    );
+                
+                ?>
+                
+                <?= form_label('Password', 'password', $attributes); ?>
+                <?= form_input($data); ?>
+                </div>
+
+                
+                <?php 
+                $data = array(
+                    'name'          => 'login',
+                    'class'          => 'btn btn-lg btn-type1-reverse pulse animated go btn-block',
+                    'value'          => 'Login',
+                );
+                ?>
+                <?= form_submit($data); ?>
+                <div class="text-right my-2">
+                    <a href="<?= site_url('f/forgot_password') ?>">Forgot Password?</a>
+                </div>
+            
+            <?= form_fieldset_close(); ?>
+        <?= form_close(); ?>
         </div>
     </div>
     </div>

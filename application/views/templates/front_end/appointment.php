@@ -2,8 +2,8 @@
     ================================= -->
     <section class="animatedParent animateOnce subbanner subbanner-image subbanner-pattern-02 subbanner-type-2 subbanner-type-2-btn">
     	<div class="container">
-         <div class="subbanner-content banner-content">
-             <div class="skew-effect fadeInLeft animated">
+           <div class="subbanner-content banner-content">
+               <div class="skew-effect fadeInLeft animated">
                 <span class="fw-normal">Schedule </span>Appointment				
             </div>
         </div>
@@ -22,7 +22,7 @@
                 <div class="clearfix">
                     <!-- Section 1 -->
                     <div class="col-md-4 float-left">
-                     <div class="heading marbot40">
+                       <div class="heading marbot40">
                         <h2>Book a free Session with our coaches</h2>
                         <p class="fontresize marbot0">Please feel free to connect with our expert coaches.</p>
                         
@@ -33,49 +33,46 @@
                             <li class="border-seperator">
                             	<h4>For Emergency</h4>
                                 <a href="#" class="reverse fw-500">
-                                   <i class="fa fa-fw flaticon-clock location-icon color-light"></i>  <?= PHONE_NUMBER ?>
-                               </a>
-                           </li>
-                       </ul>
-                   </div>
+                                 <i class="fa fa-fw flaticon-clock location-icon color-light"></i>  <?= PHONE_NUMBER ?>
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
 
-               </div>
-               <!-- // Section 1 -->
+             </div>
+             <!-- // Section 1 -->
 
-               <!-- Section 2 -->
-               <div class="col-md-8 float-left">
+             <!-- Section 2 -->
+             <div class="col-md-8 float-left">
                 <!-- SM: this is bootstrap 4 tabbed panel -->
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                   <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">New Appointment</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Already Appointed</a>
-                  </li>
-                </ul>
+                </li>
+            </ul>
 
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home" >
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" >
 
-                    <!-- ================== #new_patient =======================-->
-                    <div id="new_patient" class="tab-pane fade show active">
-                        <?php     
-                        if($this->session->flashdata('failure_message') || $this->session->flashdata('success_message'))
-                        {
-                            ?>
+                <!-- ================== #new_patient =======================-->
+                <div id="new_patient" class="tab-pane fade show active">
+                    <?php     
+                    if($this->session->flashdata('failure_message') || $this->session->flashdata('success_message'))
+                    {
+                        ?>
 
-                            <p class="alert <?= ($this->session->flashdata('failure_message')) ? 'alert-danger' : 'alert-danger' ?> alert-dismissable fade in text-center top-height"><?php if($this->session->flashdata('failure_message')) {echo $this->session->flashdata('failure_message');} else{ echo $this->session->flashdata('success_message');} ?>
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                        </p>
-                        <?php
-                        }
-                    ?>
-                    <form id="appointment-form" class="appointment panel panel-body marbot40 panel-grey" method="post" action="<?= site_url('f/appointment/add_appointment_lookup'); ?>">
-                        <?php $this->session->flashdata('success_message'); ?>
-                        <!-- Form Section -->
-                        <div class="row clearfix">
-                            <div class="col-12">
+                        <p class="alert <?= ($this->session->flashdata('failure_message')) ? 'alert-danger' : 'alert-danger' ?> alert-dismissable fade in text-center top-height"><?php if($this->session->flashdata('failure_message')) {echo $this->session->flashdata('failure_message');} else{ echo $this->session->flashdata('success_message');} ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    </p>
+                    <?php
+                }
+                ?>
+                <form id="appointment-form" class="appointment panel panel-body marbot40 panel-grey" method="post" action="<?= site_url('f/appointment/add_appointment_lookup'); ?>">
+                    <?php $this->session->flashdata('success_message'); ?>
+                    <!-- Form Section -->
+                    <div class="row clearfix">
+                        <div class="col-12">
                             <div class="col-6 float-left">
                                 <div class="clearfix form-group">
                                     <label id="first_name">First Name:</label>
@@ -96,7 +93,7 @@
                                                 <input name="last_name" type="text" class="form-control" value="<?= $this->input->post('last_name') ?>" id="last_name" autocomplete="off">
                                             </div>
                                         </div>
-                            </div>
+                                    </div>
 
                                     <div class="col-12">
                                         <div class="col-6 float-left">    
@@ -146,49 +143,10 @@
                                                 <?= form_error('gender'); ?>
                                             </div>
                                         </div> -->
-
-                                        <!-- Birthday -->
-                                        <div class="col-6 float-left">
-                                            <div class="clearfix form-group">
-                                                <?= form_label('Birthday: ', 'birthday'); ?>
-                                                <?php
-
-                                                $data = array(
-                                                    'type'          => 'text',
-                                                    'class'         => 'form-control',
-                                                    'name'          => 'birthday',
-                                                    'id'            => 'birthday',
-                                                    'value'         => set_value('birthday')
-                                                );
-                                                ?>
-
-                                                <?= form_input($data); ?>
-                                                <?= form_error('birthday'); ?>
-                                            </div>
-                                        </div>
-                                        
                                         <!-- CNIC -->
 
 
-                                        <!-- <div class="col-6 float-left">
-                                            <div class="clearfix form-group">
-                                                <?= form_label('CNIC: ', 'cnic'); ?>
-                                                <?php
-
-                                                $data = array(
-                                                    'type'          => 'text',
-                                                    'class'         => 'form-control',
-                                                    'name'          => 'cnic',
-                                                    'id'            => 'cnic',
-                                                    'value'         => set_value('cnic'),
-                                                    'autocomplete'  => 'off'
-                                                );
-                                                ?>
-
-                                                <?= form_input($data); ?>
-                                                <?= form_error('cnic'); ?>
-                                            </div>
-                                        </div> -->
+                                      
 
                                         <!-- MR_NUMBER -->
                                         <!-- Appointment Date -->
@@ -210,13 +168,33 @@
                                                 <?= form_input($data); ?>
                                             </div>
                                         </div>
+
                                         <!-- Appointment Date -->
+
+                                        <!-- Type of assistance --> 
+                                        <div class="col-6 float-left">
+                                            <div class="clearfix form-group">
+                                                <?= form_label('Reason for contact: ', 'submitted_date_1'); ?>
+                                                <?php
+
+                                                $options = array(
+                                                      'coache_1'  => 'Parenting Help',
+                                                      'coache_2'    => 'Personal Help',
+                                                      'coache_3'   => 'Just Help',
+                                                      'coache_4' => 'Other Help',
+                                                    );
+                                                ?>
+                                                <?= form_dropdown('reason',$options,'coache_1'); ?>
+                                            </div>
+                                        </div>
+                                        <!-- Type of assistance --> 
+
                                         <!-- VISIT PURPOSE -->
 
                                         <div class="col-6 float-left">
                                             <div class="form-group">
-                                                    <label for="message">Visit Purpose:</label>
-                                                    <textarea name="visit_purpose" class="form-control" rows="4" id="visit_purpose"><?= $this->input->post('visit_purpose') ?></textarea>
+                                                <label for="message">Visit Purpose:</label>
+                                                <textarea name="visit_purpose" class="form-control" rows="4" id="visit_purpose"><?= $this->input->post('visit_purpose') ?></textarea>
                                             </div>
                                         </div>
                                         
@@ -347,193 +325,13 @@
                                 </div>
                                 <!-- // Form Section -->
                             </form>
-                </div>
+                        </div>
 
-                    <!-- ================== #new_patient =======================-->
+                        <!-- ================== #new_patient =======================-->
 
-                  </div>
-
-
-
-                  <div class="tab-pane fade" id="profile" role="tabpanel" >
-                    <!-- ================== #old_patient ========================-->
-                    <div id="old_patient" class="tab-pane fade in">
-                        <?php     
-                            if($this->session->flashdata('success_message_2'))
-                            {
-                                ?>
-
-                                <p class="alert <?= ($this->session->flashdata('success_message_2')) ? 'alert-danger' : 'alert-danger' ?> alert-dismissable fade in text-center top-height"><?php if($this->session->flashdata('success_message_2')) {echo $this->session->flashdata('success_message_2');} else{ echo $this->session->flashdata('success_message_2');} ?>
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            </p>
-                            <?php
-                            }
-                        ?>
-                        <form id="second-appointment-form" class="appointment panel panel-body marbot40 panel-grey" method="post" action="<?= site_url('f/appointment/add_appointment_old_lookup'); ?>">
-
-                            <!-- Form Section -->
-                            <div class="row clearfix">
-                                <!-- CNIC -->
-
-                                <div class="col-md-6">
-                                    <div class="clearfix form-group">
-                                        <?= form_label('CNIC: ', 'old_cnic'); ?>
-                                        <?php
-
-                                        $data = array(
-                                            'type'          => 'text',
-                                            'class'         => 'form-control',
-                                            'name'          => 'old_cnic',
-                                            'id'            => 'old_cnic',
-                                            'value'         => set_value('old_cnic'),
-                                            'autocomplete' =>  'off'
-                                        );
-                                        ?>
-
-                                        <?= form_input($data); ?>
-                                    </div>
-                                </div>
-
-                                <!-- MR_NUMBER -->
-
-                                <div class="col-md-6">
-                                    <div class="clearfix form-group">
-                                        <label for="mr_number">MR-Number:</label>
-                                        <input name="mr_number" type="text" value="<?= $this->input->post('mr_number') ?>"  autocomplete="off" class="form-control" id="mr_number" readonly placeholder="It will be autofilled after CNIC is given">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row clearfix">
-                                <div class="col-md-6">
-                                    <div class="clearfix form-group">
-                                        <?= form_label('Appointment Date: ', 'submitted_date_2'); ?>
-                                        <?php
-
-                                        $data = array(
-
-                                            'class'         => 'form-control submitted_date',
-                                            'readonly'      => 'readonly',
-                                            'name'          => 'submitted_date_2',
-                                            'id'            => 'submitted_date_2',
-                                            'value'         => set_value('submitted_date_2')
-                                        );
-                                        ?>
-                                        <?= form_input($data); ?>
-                                    </div>
-                                </div>
-
-                                <!-- Dropdown List -->
-                                <div class="col-md-6">
-                                    <!-- Doctor -->
-                                    <div class="clearfix form-group">
-                                        <?= form_label('Doctor: ', 'doctor'); ?>
-                                        <?php
-
-                                        $data = array(
-
-                                            'class'         => 'form-control selectpicker btn btn-primary',
-                                            'id'            => 'doctor_old',
-                                            'name'          => 'doctor_old',
-                                            'title'         => 'Please choose one',
-                                            'data-live-search'  => TRUE
-                                        );
-
-                                                // foreach ($doctors as $doctor) 
-                                                // {
-                                                //     $id = $doctor['doctor_id'];
-                                                //     // $id . 'data-subtext="Rep California"';
-                                                //     $specializations = ucwords(entity_decode(implode(', ', array_column($doctor['specialization'], 'name'))));
-                                                //     $doc_options[$id] = ucwords(entity_decode($doctor['first_name']));
-                                                // }
-
-                                        $selected = $this->input->post('doctor_old');
-
-                                        ?>
-                                        <?= form_dropdown('doctor_old', '', $selected, $data); ?>
-                                    </div>                                            
-                                </div>
-                            </div>
-                            <!-- Dropdown List -->
-
-                            <!-- VISIT PURPOSE -->
-
-                            <div class="row clearfix">
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <br>
-                                        <label for="visit_purpose_2">Visit Purpose:</label>
-                                        <textarea name="visit_purpose_2" class="form-control" rows="4" id="visit_purpose_2"><?= $this->input->post('visit_purpose_2') ?></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <?= form_label('Morning Shift: ', 'morning_shift'); ?>
-                                    <div class="input-group">
-                                        <?php
-
-                                        $data = array(
-
-                                            'class'         => 'form-control',
-                                            'name'          => 'morning_shift_2',
-                                            'id'            => 'morning_shift_2',
-                                            'value'         => set_value('morning_shift'),
-                                            'title'         => 'Please select a doctor first',
-                                            'readonly'      => 'readonly',
-                                            'autocomplete'  => 'off',
-                                            'disabled'      =>  'disabled'                                        
-                                        );
-                                        ?>
-
-                                        <span class="input-group-addon">
-                                            <input type="checkbox" id="morning_shift_cb_2" aria-label="Checkbox for following text input">
-                                        </span>
-                                        <?= form_input($data); ?>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <?= form_label('Evening Shift: ', 'evening_shift'); ?>
-                                    <div class="input-group">
-                                        <?php
-
-                                        $data = array(
-
-                                            'class'         => 'form-control',
-                                            'name'          => 'evening_shift_2',
-                                            'id'            => 'evening_shift_2',
-                                            'value'         => set_value('evening_shift'),
-                                            'title'         => 'Please select a doctor first',
-                                            'readonly'      => 'readonly',
-                                            'autocomplete'  => 'off',
-                                            'disabled'      => 'disabled'
-
-                                        );
-                                        ?>
-                                        <span class="input-group-addon">
-                                            <input type="checkbox" id="evening_shift_cb_2" aria-label="Checkbox for following text input">
-                                        </span>  
-                                        <?= form_input($data); ?>  
-
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="status" value="0">
-
-                            <div class="row clearfix">
-                                <div class="col-md-12">
-                                    <br>
-                                    <button type="submit" id="book2" name="book2" class="btn btn-type1-reverse pull-right">Book Appointment</button>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- // Form Section -->
                     </div>
 
-                    <!-- ================== #old_patient ========================-->
-
-                  </div>
-              </div>
+                </div>
                 
                 <div id="post_message"><p class="fontresize"> </p></div>
             </div>
